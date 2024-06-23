@@ -81,7 +81,7 @@ function saludar(nombre) {
     return `Hola, ${nombre}`;
 }
 
-console.log(saludar('Juan'));  // Imprime: Hola, Juan
+console.log(saludar('Nacho'));  // Imprime: Hola, Juan
 
 // Resumen de Conceptos:
 
