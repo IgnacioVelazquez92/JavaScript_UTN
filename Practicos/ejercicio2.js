@@ -1,22 +1,18 @@
 //De acuerdo a una hora dada, informar saludar al usuario
 
-let mes = 6;
-let estacion;
+let hora = 6;
+let mensaje;
 
-if(mes == 1 || mes == 2 || mes == 12){
-    estacion = "Verano";
-}
-else if(mes == 3 || mes == 4 || mes == 5){
-    estacion = "Otoño";
-}
-else if(mes == 6 || mes == 7 || mes == 8){
-    estacion = "Invierno";
-}
-else if(mes == 9 || mes == 10 || mes == 11){
-    estacion="primavera"
-}
-else {
-    estacion = "Valor incorrecto"
+if (hora >= 6 && hora <= 11) {
+  mensaje = "Good moorning";
+} else if (hora >= 12 && hora <= 16) {
+  mensaje = "Good afternoon";
+} else if (hora >= 17 && hora <= 19) {
+  mensaje = "Good evening";
+} else if (hora >= 20 && hora <= 23) {
+  mensaje = "Good night";
+} else {
+  mensaje = "Valor incorrecto";
 }
 
-console.log(`La estación del año corresponde a ${estacion}`)
+console.log(mensaje);
