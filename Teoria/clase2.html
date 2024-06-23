@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 2 de Javascript</title>
+</head>
+<body>
+    <h1>Hola mundo con javascript</h1>
+    <main id="main"></main>
+    <button id="btn-alert">Saludar con alert</button>
+    <button id="btn-main">Saludar en pantalla</button>
+
+    <script>
+        let btn = document.getElementById("btn-alert")
+        btn.addEventListener("click", function (){
+            alert("hola mundo desde el HTML")
+        })
+        let main = document.getElementById("main")
+        let btn2 = document.getElementById("btn-main")
+        let hola_h1 = document.createElement("h1")
+        btn2.addEventListener("click", function (){
+
+            hola_h1.textContent= "Hola mundo desde el dom";
+           main.appendChild(hola_h1)
+        })
+    </script>
+</body>
+</html>
